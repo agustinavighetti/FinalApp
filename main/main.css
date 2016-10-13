@@ -1,0 +1,38 @@
+.selectPlace--autocomplete {
+    margin: 20px 20px 40px 5px;
+    width: 30%;
+}
+
+.selectPlace--button {
+}
+
+.selectPlace--title {
+    color: #000;
+    display: block;
+    font-size: 40px;
+}
+
+.wrapper {
+    background-color: #fff;
+    color: blue;
+    height: auto;
+    margin: auto;
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+}
+
+.wrapper--map {
+    border: 0;
+    height: 400px;
+    width: 100%;
+}
+
+@media screen and (max-width: 470px) {
+    .selectPlace--autocomplete {
+        width: 50%;
+    }
+
+    .wrapper--map {
+        height: 200px;
+    }
+}
