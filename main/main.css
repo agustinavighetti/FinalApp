@@ -1,0 +1,62 @@
+.selectPlace--button {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background-color: #41DD03;
+    border-radius: 8px;
+    border: 1px solid;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Trebuchet MS;
+    font-size: 17px;
+    margin: 0 20px 20px;
+    padding: 3px 10px;
+    text-decoration: none;
+    width: auto;
+}
+
+.selectPlace--button:active {
+    position: relative;
+    top: 1px;
+}
+
+.selectPlace--button:hover {
+    background-color: #269A02;
+}
+
+.selectPlace--autocomplete {
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+}
+
+.selectPlace--title {
+    color: #000;
+    display: block;
+    font-size: 40px;
+}
+
+.wrapper {
+    background-color: #fff;
+    color: blue;
+    height: auto;
+    margin: auto;
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+}
+
+.wrapper--map {
+    border: 0;
+    height: 400px;
+    width: 100%;
+}
+
+@media screen and (max-width: 470px) {
+    .selectPlace--autocomplete {
+        width: 50%;
+    }
+
+    .wrapper--map {
+        height: 200px;
+    }
+}
