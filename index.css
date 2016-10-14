@@ -1,0 +1,142 @@
+@font-face {
+  font-display: auto;
+  font-family: 'Arvo';
+  src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    background-color: #E6E6E6;
+    font-family: 'Arvo';
+    width: 100%;
+}
+ 
+.button--line {
+    background: white;
+    display: block;
+    height: 3px;
+    left: -5px;
+    margin-top:5px;
+    position: relative;
+    top:-5px;
+    width: 30px;
+}
+ 
+.container {
+    background-color: #ACACAC;
+    height: 100%;
+    margin: auto;
+    width: 80%;
+}
+
+.footer {
+    background-color: #ACACAC;
+    color: #097546;
+    text-align: center;
+}
+
+.header {
+    color: #097546;
+    font-size: 90px;
+    height: 120px;
+    text-align: center;
+}
+
+.item {
+    display: inline-block;
+    font-size: 105%;
+    list-style: none;
+    margin: 0 1%;
+    text-align: center;
+    width: auto;
+}
+
+.item--link {
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.list {
+    padding: 0;
+}
+
+.menu {
+    background-color: #525050;
+    height: 50px;
+    padding:10px 0;
+    text-align: center;
+}
+
+#menu-toggle {
+    display: none; /* hide the checkbox */
+}
+
+#menu-toggle:checked + #menu {
+    display: block;
+}
+
+.responsive-button {
+    background: #666;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    width: 40px;
+}
+
+.responsive-menu {  
+    cursor: pointer;
+    display: none;
+    margin: 5px 0 5px 10px;
+}
+
+@media screen and (max-width: 820px) {
+    .item {
+        background-color: #525050;
+        border-bottom: 2px solid white;
+        display: block;
+        padding-left: 3%;
+        text-align: left;
+    }
+
+    .line {
+        background-color: #525050;
+    }
+
+    .menu {
+        background: white;
+        display: none;
+        position: relative;
+        z-index: 99;
+    }
+
+    .responsive-menu {
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .header {
+        font-size: 60px;
+        height: 80px;
+    }
+}
